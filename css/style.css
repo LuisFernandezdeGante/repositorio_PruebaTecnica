@@ -1,0 +1,155 @@
+/* Fondo general */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+/* Títulos */
+h1 {
+    text-align: center;
+    color: #0f4c75;
+    margin-bottom: 25px;
+}
+
+h2 {
+    text-align: center;
+    color: #1b262c;
+    margin-top: 30px;
+}
+
+/* Buscador */
+.search-box {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+}
+
+/* Botones */
+button {
+    padding: 12px 18px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 123, 255, 0.4);
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+thead {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+tbody tr {
+    background: #f9fbfd;
+    transition: 0.3s;
+}
+
+tbody tr:nth-child(even) {
+    background: #eef4fa;
+}
+
+tbody tr:hover {
+    background: #d6e9ff;
+    transform: scale(1.01);
+}
+
+
+
+/* Mapa */
+#map {
+    height: 420px;
+    margin-top: 25px;
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .container {
+        padding: 20px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    #map {
+        height: 300px;
+    }
+}
+/* Botón ver ubicación */
+.btn-view {
+    background: linear-gradient(135deg, #17a2b8, #117a8b);
+    margin-right: 5px;
+}
+
+.btn-view:hover {
+    box-shadow: 0 6px 12px rgba(23, 162, 184, 0.4);
+}
+
+/* Botón eliminar */
+.btn-delete {
+    background: linear-gradient(135deg, #ff4b5c, #c82333);
+}
+
+.btn-delete:hover {
+    box-shadow: 0 6px 12px rgba(255, 75, 92, 0.4);
+}

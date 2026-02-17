@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>IP Tracker Platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Plataforma de Consulta IP</h1>
+
+    <div class="search-box">
+        <input type="text" id="ipInput" placeholder="Ingresa una IP (Ej: 8.8.8.8)">
+        <button id="searchBtn">Consultar</button>
+    </div>
+
+    <input type="text" id="filterInput" placeholder="Filtrar registros...">
+
+    <table>
+        <thead>
+            <tr>
+                <th>IP</th>
+                <th>Ciudad</th>
+                <th>Región</th>
+                <th>País</th>
+                <th>ISP</th>
+                <th>Zona Horaria</th>
+                <th>Fecha</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+
+    <h2>Ubicación en el Mapa</h2>
+    <div id="map"></div>
+</div>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script type="module" src="js/app.js"></script>
+
+</body>
+</html>
